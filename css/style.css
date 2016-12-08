@@ -125,54 +125,43 @@ textarea { overflow: auto; }
 
 body { background-image: url(../img/moneybg.jpg); background-size: 100%; }
 
-body header { color: #fff; text-align: center; text-shadow: 0px 0px 10px #000; min-height: 200px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
+body header, body footer { min-height: 60px; }
 
-body header h1 { width: 100%; }
+@media screen and (min-width: 600px) { body header, body footer { min-height: 200px; } }
 
-body footer { min-height: 200px; }
+body #content { background: linear-gradient(#e5af23 240px, white 380px, white 7340px, #e5af23 7410px); }
 
-body #content { background: linear-gradient(#e5af23, white, white, #e5af23); }
+@media screen and (min-width: 600px) { body #content { background: linear-gradient(#e5af23 220px, white 380px, white 7590px, #e5af23 7820px); } }
 
 body #content .band { background-image: url(../img/band.svg); background-repeat: repeat-x; width: 100%; height: 77px; }
 
-body #content .deck { padding: 20px; max-width: 1024px; margin: 0 auto; }
+body #content .deck { padding: 20px; max-width: 400px; margin: 0 auto; }
 
 body #content .deck .h1-wrapper { text-align: center; }
 
 body #content .deck .h1-wrapper h1 { display: inline-block; border-bottom: 5px solid #000; font-size: 45px; min-width: 260px; margin-bottom: 0px; }
 
+@media screen and (min-width: 600px) { body #content .deck .h1-wrapper h1 { font-size: 61px; } }
+
 body #content .deck h1, body #content .deck h2 { text-align: center; padding: 0px 0 20px; }
 
 body #content .deck h3 { margin-top: 30px; }
 
-@media screen and (min-width: 980px) { body #content .deck h3 { margin-top: 60px; font-size: 20px; } }
-
-body #content .deck p { margin-bottom: 30px; }
-
-@media screen and (min-width: 980px) { body #content .deck p { margin-bottom: 60px; font-size: 18px; line-height: 2; } }
+body #content .deck p { margin-bottom: 30px; line-height: 1.5; }
 
 body #content .deck .money-phone-images { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
 body #content .deck .money-phone-images img { margin: 10px 0; max-width: 100%; }
 
-@media screen and (min-width: 600px) { body #content .deck .money-phone-images img { max-width: 48%; }
-  body #content .deck .money-phone-images img.one-third { max-width: 32%; } }
-
 body #content .deck .mock-up-gifs { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
 body #content .deck .mock-up-gifs img { margin: 10px 0; max-width: 100%; }
 
-@media screen and (min-width: 600px) { body #content .deck .mock-up-gifs img { max-width: 32%; } }
-
 body #content .deck .example-images { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
-body #content .deck .example-images img { margin: 10px 0; max-height: 491px; max-width: 100%; }
+body #content .deck .example-images img { margin: 10px 0; max-width: 100%; }
 
-@media screen and (min-width: 600px) { body #content .deck .example-images img { max-width: 48%; } }
-
-body #content .deck .yj { max-width: 100%; display: block; margin: 0 auto; }
-
-@media screen and (min-width: 600px) { body #content .deck .yj { max-width: 600px; } }
+body #content .deck .yj { max-width: 100%; }
 
 body #content .deck a { color: #000; }
 
