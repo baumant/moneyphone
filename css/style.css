@@ -129,7 +129,9 @@ body header, body footer { min-height: 60px; }
 
 @media screen and (min-width: 600px) { body header, body footer { min-height: 200px; } }
 
-body #content { background: linear-gradient(#e5af23 1.5%, white 6%, white 94.4%, #e5af23 98%); }
+body #content { background: linear-gradient(#e5af23 1.5%, white 5%, white 95.4%, #e5af23 98%); }
+
+@media screen and (min-width: 980px) { body #content { background: linear-gradient(#e5af23 1.5%, white 6%, white 94.4%, #e5af23 98%); } }
 
 body #content .band { background-image: url(../img/band.svg); background-repeat: repeat-x; width: 100%; height: 77px; }
 
@@ -159,11 +161,19 @@ body #content .deck .money-phone-images img { margin: 10px 0; max-width: 100%; }
 
 body #content .deck .mock-up-gifs { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
-body #content .deck .mock-up-gifs img { margin: 10px 0; max-width: 50%; }
+body #content .deck .mock-up-gifs img { margin: 10px 0; max-width: 100%; }
+
+body #content .deck .mock-up-gifs p { text-align: center; }
+
+@media screen and (min-width: 980px) { body #content .deck .mock-up-gifs { width: 800px; margin-left: -200px; }
+  body #content .deck .mock-up-gifs div { max-width: 32%; } }
 
 body #content .deck .example-images { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
-body #content .deck .example-images img { margin: 10px 0; max-width: 49%; }
+body #content .deck .example-images img { margin: 10px 0; max-width: 100%; }
+
+@media screen and (min-width: 980px) { body #content .deck .example-images { width: 800px; margin-left: -200px; }
+  body #content .deck .example-images img { max-width: 49%; } }
 
 body #content .deck .yj { max-width: 100%; }
 
