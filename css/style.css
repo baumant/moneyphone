@@ -145,9 +145,13 @@ body #content .deck .h1-wrapper h1 { display: inline-block; border-bottom: 5px s
 
 body #content .deck h1, body #content .deck h2 { text-align: center; padding: 0px 0 20px; }
 
-body #content .deck h3 { margin-top: 30px; }
-
 body #content .deck p { margin-bottom: 30px; line-height: 1.5; }
+
+body #content .deck img { max-width: 100%; }
+
+body #content .deck img.border { margin: 15px 0; }
+
+body #content .deck img.section-title { margin-top: 30px; }
 
 body #content .deck .money-phone-images { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; }
 
